@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dayananda KS Portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background: linear-gradient(to right, #f8f1ff, #ffe8f1);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: black;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    img.profile {
+      width: 300px;
+      height: 320px;
+      border-radius: 50%;
+      margin: 10px auto;
+      display: block;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    .contact-details {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Dayananda KS</strong></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <img src="my_photo.jpg" alt="Dayananda KS" class="profile">
+    <h1>Hello, I'm <strong>Dayananda KS</strong> 👋</h1>
+    <p>I'm Enthusiastic to learning</p>
+    <div class="buttons">
+      <a href="javascript:void(0);" onclick="showContactDetails()">Contact me here →</a>
+      <a href="Dayananda_KS_Resume.pdf" download>Download CV ↓</a>
+      <a href="https://www.linkedin.com/in/dayanandaks" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Dayanandadaya" target="_blank">GitHub</a>
+    </div>
+    <div id="contactDetails" class="contact-details">
+      <p><strong>Phone Number:</strong> 6364716011</p>
+      <p><strong>Email:</strong> <a href="mailto:dayanandaks045@gmail.com">dayanandaks045@gmail.com</a></p>
+      <img src="" alt="" class="" style="">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate Computer Science student interested in web development and problem solving. I enjoy building useful apps and learning new technologies like Flask, Git, and more.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>To-Do List App</strong>: A task manager using Flask. <a href="https://github.com/Dayanandadaya/todo_app" target="_blank">[GitHub]</a></li>
+      <li><strong>Number Guessing Game</strong>: A simple guessing app. <a href="https://github.com/Dayanandadaya/my-flask-app" target="_blank">[GitHub]</a></li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, HTML, CSS</li>
+      <li>Flask, Git, GitHub</li>
+      <li>Render.com, Problem Solving</li>
+      <li>LeetCode, HackerRank</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>BE in Computer Science and Engineering<br />KVG College of Engineering</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Beginner — currently building projects, solving problems, and learning actively!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: dayanandaks045@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Dayanandadaya" target="_blank">Dayanandadaya</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dayanandaks" target="_blank">Dayananda KS</a></p>
+  </section>
+
+  <script>
+    function showContactDetails() {
+      const contactDetails = document.getElementById('contactDetails');
+      contactDetails.style.display = contactDetails.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
